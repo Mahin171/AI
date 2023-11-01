@@ -4,14 +4,14 @@ import { ClerkProvider } from '@clerk/nextjs'
 
 import { ToasterProvider } from '@/components/toaster-provider'
 import { ModalProvider } from '@/components/modal-provider'
-import { CrispProvider } from '@/components/crisp-provider'
+//import { CrispProvider } from '@/components/crisp-provider'
 
 import './globals.css'
 
 const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Genius',
+  title: 'AI_VERSE',
   description: 'AI Platform',
 }
 
@@ -23,7 +23,7 @@ export default async function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <CrispProvider />
+        {/* <CrispProvider /> */}
         <body className={font.className}>
           <ToasterProvider />
           <ModalProvider />
